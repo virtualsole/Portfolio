@@ -1,0 +1,170 @@
+.bg_home {
+    background-color: #f1fbf7;
+    content:"";
+    
+    padding: 0px;
+    border-radius: 5px;
+
+    /* z-index: 99; */
+}
+
+
+
+  .full-landing-image
+  {
+    width: 490px;
+    height: 518px;
+    background: url('../../assets/B612_20200228_2.jpg') no-repeat center;
+    background-size: contain;
+    /* background-position: center; */
+    
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    .full-landing-image {
+        width: 100%;
+    }
+}
+
+.bg_home h1 {
+    color: #333333;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    font-style: italic;
+}
+
+
+.img_men {
+    position: relative;
+}
+
+.row>* {
+ 
+    padding-left: 5px;
+
+    margin-top: -9px;
+}
+
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 400;
+    font-style: italic;
+    min-width: 280px;
+    color: #505356;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #192135;
+    font-weight: 700;
+    animation: words 20s infinite;
+    transition: 0.3s all ease;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: none  ;
+    border-bottom: 2px solid #000;
+    left: 8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@media only screen and (max-width: 600px)  {
+    .bg_home {
+        height: fit-content;
+        width: 100%;
+    /* padding: 10px; */
+
+    }
+
+    .bg_home h1 {
+       
+        font-size: 52px;
+      
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .stak-sd {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        .bg_home {
+            height: fit-content;
+            width: 100%;
+  
+        margin-top: 70px;
+    
+        }
+        .full-landing-image {
+            width: 100%;
+        }
+    .stak-sd {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .row>* {
+    font-size: 1px
+    }
+    }
+
+
+
+
+@keyframes cursor {
+    to{
+        border-bottom: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Entrepreneur";
+    }
+    21%,40%{
+        content: "Developer";
+    }
+    41%,60%{
+        content: "Crypto Trader";
+    }
+    61%,80%{
+        content: "Writers";
+    }
+    81%,100%{
+        content: "Motivational Speaker";
+    }
+  
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
